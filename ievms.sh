@@ -88,6 +88,14 @@ check_unrar() {
     hash unrar 2>&- || install_unrar
 }
 
+check_mkisofs() {
+    hash mkisofs 2>&- || link_genisoimage
+}
+
+link_genisoimage() {
+    ln -s /usr/bin/genisoimage /usr/bin/mkisofs
+}
+
 build_ievm() {
     case $1 in
         6) 

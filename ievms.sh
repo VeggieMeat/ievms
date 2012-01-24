@@ -235,6 +235,7 @@ check_system
 create_home
 check_virtualbox
 check_unrar
+check_mkisofs
 
 all_versions="6 7 8 9"
 for ver in ${IEVMS_VERSIONS:-$all_versions}

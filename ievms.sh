@@ -93,7 +93,7 @@ check_mkisofs() {
 }
 
 link_genisoimage() {
-    ln -s /usr/bin/genisoimage /usr/bin/mkisofs
+    sudo ln -s /usr/bin/genisoimage /usr/bin/mkisofs
 }
 
 build_ievm() {
